@@ -12,8 +12,8 @@ const handleSend = (e)=>{
 
 }
   return (
-    <form onSubmit={handleSend}>
-      <input type='text' className='' onChange={(e)=> setInput(e.target.value)} value={input} />
+      <form onSubmit={handleSend} className=' rounded-[20px] flex flex-wrap justify-center items-center w-[1014px] fixed h-[255px] bg-white border-[blue]' >
+        <input type='text' className=' w-[1014px] h-[211px]' onChange={(e)=> setInput(e.target.value)} value={input} />
       <button type='submit'><Send /></button>
     </form>
   )
