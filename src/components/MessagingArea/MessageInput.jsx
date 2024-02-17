@@ -12,9 +12,14 @@ const handleSend = (e)=>{
 
 }
   return (
-      <form onSubmit={handleSend} className=' rounded-[20px] flex flex-wrap justify-center items-center w-[1014px] fixed h-[255px] bg-white border-[blue]' >
-        <input type='text' className=' w-[1014px] h-[211px]' onChange={(e)=> setInput(e.target.value)} value={input} />
-      <button type='submit'><Send /></button>
+      <form onSubmit={handleSend} className=' rounded-[20px] flex flex-wrap justify-end items-between w-[900px] fixed h-[182px] bg-white border-[20px] 
+      top-[450px] left-[380px]
+      border-[#001F8B]' >
+
+
+        <input type='text' placeholder='Enter your text here...........' className=' w-[1014px] text-[#9A9A9A] px-4 pt-1' 
+        onChange={(e)=> setInput(e.target.value)} value={input} />
+      <button type='submit' className=' mr-6'><Send /></button>
     </form>
   )
 }

@@ -8,7 +8,7 @@ function Message() {
     <div>
       <MessageHeader />
       {
-        messages.map((msg)=> (<li className='' key={msg.id}>{msg.text}</li>))
+        messages.map((msg)=> (<li className=' w-[997px] bg-white h-[210px] fixed text-black p-4' key={msg.id}>{msg.text}</li>))
       }
       <MessageInput />
     </div>
